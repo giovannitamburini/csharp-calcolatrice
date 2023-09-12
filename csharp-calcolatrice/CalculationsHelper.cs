@@ -17,14 +17,14 @@ namespace csharp_calcolatrice
             - Somma di due numeri double
             - Differenza tra due numeri interi
             - Differenza tra due numeri double
-            Moltiplicazione di due numeri interi
-            Moltiplicazione di due numeri double
-            Valore assoluto di un numero intero
-            Valore assoluto di un numero double
-            Minimo tra due numeri interi
-            Minimo tra due numeri double
-            Massimo tra due numeri interi
-            Massimo tra due numeri double
+            - Moltiplicazione di due numeri interi
+            - Moltiplicazione di due numeri double
+            - Valore assoluto di un numero intero
+            - Valore assoluto di un numero double
+            - Minimo tra due numeri interi
+            - Minimo tra due numeri double
+            - Massimo tra due numeri interi
+            - Massimo tra due numeri double
             Il fatto di dover scrivere lo stesso metodo per tipi di parametro diversi applica nella pratica uno dei principi di programmazione ad oggetti che abbiamo visto...Quale?
             Scrivetelo in un commento all’interno del codice! :faccia_nerd: Testate tutti i metodi della vostra classe di helper (con un esempio per ogni casistica).
              */
@@ -51,6 +51,54 @@ namespace csharp_calcolatrice
         public static double CalculateDifferenceOfTwoDouble(double num1, double num2)
         {
             return num1 - num2;
+        }
+
+        // funzione per moltiplicare tra loro due interi
+        public static int CalculateProductBetweenIntegers(int num1, int num2)
+        {
+            return num1 * num2;
+        }
+
+        // funzione per moltiplicare tra loro due double
+        public static double CalculateProductBetweenDoubles(double num1, double num2)
+        {
+            return num1 * num2;
+        }
+
+        // funzione per calcolare il valore assoluto di un intero
+        public static int CalculateIntAbsoluteValue(int num)
+        {
+            return Math.Abs(num);
+        }
+
+        // funzione per calcolare il valore assoluto di un double
+        public static double CalculateDoubleAbsoluteValue(double num)
+        {
+            return Math.Abs(num);
+        }
+
+        // funzione per controllare il minimo tra due int
+        public static int CheckMinBetweenTwoInt(int num1, int num2)
+        {
+            return Math.Min(num1, num2);
+        }
+
+        // funzione per controllare il minimo tra due double
+        public static double CheckMinBetweenTwoDouble(double num1, double num2)
+        {
+            return Math.Min(num1, num2);
+        }
+
+        // funzione per controllare il massimo tra due int
+        public static int CheckMaxBetweenTwoInt(int num1, int num2)
+        {
+            return Math.Max(num1, num2);
+        }
+
+        // funzione per controllare il massimo tra due double
+        public static double CheckMaxBetweenTwoDouble(double num1, double num2)
+        {
+            return Math.Max(num1, num2);
         }
     }
 }
