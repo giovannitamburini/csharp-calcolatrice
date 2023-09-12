@@ -23,7 +23,13 @@
             - Massimo tra due numeri double
             Il fatto di dover scrivere lo stesso metodo per tipi di parametro diversi applica nella pratica uno dei principi di programmazione ad oggetti che abbiamo visto...Quale?
             Scrivetelo in un commento all’interno del codice! :faccia_nerd: Testate tutti i metodi della vostra classe di helper (con un esempio per ogni casistica).
+            BONUS:
+            Aggiungete il metodo per l’elevamento a potenza che prende come parametri due numeri interi (base ed esponente) e ritorna la base elevata all’esponente.
+            Occhio che sia la base che l’esponente potrebbero essere uguali a zero oppure numeri negativi! (caso esponente = 0 e base = 0 anche se in matematica sarebbe un numero indefinito usiamo l’approccio informatico che lo calcola come 1)
+            SUPER SUPER BONUS:
+            Provate a cimentarvi con i Generics di C#, a che cosa vi potrebbero tornare molto comodi in questo particolare programma?
             */
+
             int IntNum1 = 5;
             int IntNum2 = 9;
 
@@ -81,7 +87,7 @@
             // Nel nostro caso specifico il polimorfismo viene applicato tramite l' "overloading" e permette l'utilizzo dello stesso metodo coerentemente ma per eseguire le operazioni su tipi di dato diversi.
             // Grazie al polimorfismo il compilatore seleziona in automatico il giusto metodo
 
-            // bonus
+            // BONUS
             double ExponentialNum = CalculationsHelper.CalculateExponentiation(IntNum1, IntNum3);
             Console.WriteLine($"L'esponenziale di {IntNum1} con esponente {IntNum3} è: {ExponentialNum}");
         }
