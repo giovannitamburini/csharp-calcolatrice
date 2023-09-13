@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace csharp_calcolatrice
 {
-    public static class CalculationsHelper
-    {
+    public class CalculationsHelper
+    { 
+        
         // funzione che somma due numeri interi
+        //public static T CalculateSumOfTwoNum(T num1, T num2) where T : INumber
         public static int CalculateSumOfTwoNum(int num1, int num2)
         {
             return num1 + num2;
@@ -23,6 +27,8 @@ namespace csharp_calcolatrice
         // funzione che fa la sottrazione tra due interi
         public static int CalculateDifferenceOfTwoNum(int num1, int num2)
         {
+            //dynamic result = num1 - num2;
+
             return num1 - num2;
         }
 
@@ -146,13 +152,12 @@ namespace csharp_calcolatrice
                 numBase = 1;
             }
 
+            // istanzio un ACCUMULATORE pari al valore del numero base
             double Exponential = numBase;
 
             // controllo che l'esponente non sia uguale a 0
             if (exponent == 0)
             {
-                exponent = 1;
-
                 return Exponential;
 
             } else if (exponent < 0)
